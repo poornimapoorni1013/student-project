@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Container Layout */
+        .profile-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        /* Header / Banner */
+        .profile-header {
+            background: linear-gradient(135deg, #4f46e5, #3b82f6);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .profile-avatar {
+            width: 110px;
+            height: 110px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #4f46e5;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .profile-header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .profile-header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Main Content Body */
+        .profile-body {
+            padding: 30px;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #1e293b;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .info-item {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+        .info-item label {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #64748b;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .info-item span {
+            font-size: 16px;
+            color: #0f172a;
+            font-weight: 500;
+        }
+
+        /* Courses and Skills Tags */
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* About Text */
+        .about-text {
+            color: #475569;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        .profile-footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #94a3b8;
+            border-top: 1px solid #f1f5f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Header Section -->
+        <header class="profile-header">
+            <div class="profile-avatar">🎓</div>
+            <h1>Alex Mercer</h1>
+            <p>Computer Science & Engineering Student</p>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="profile-body">
+            <!-- Academic Information -->
+            <h2 class="section-title">Academic Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <label>Student ID</label>
+                    <span>STU-2026-8942</span>
+                </div>
+                <div class="info-item">
+                    <label>Current Semester</label>
+                    <span>Semester 5 (Year 3)</span>
+                </div>
+                <div class="info-item">
+                    <label>GPA</label>
+                    <span>3.84 / 4.00</span>
+                </div>
+                <div class="info-item">
+                    <label>University</label>
+                    <span>Apex Tech University</span>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <h2 class="section-title">Biography</h2>
+            <p class="about-text">
+                Passionate software engineering student with an interest in web development, database management, and UI/UX design. Actively searching for front-end development internship opportunities.
+            </p>
+
+            <!-- Current Courses -->
+            <h2 class="section-title">Enrolled Courses</h2>
+            <div class="tag-list">
+                <span class="tag">Web Architecture</span>
+                <span class="tag">Database Systems</span>
+                <span class="tag">Data Structures & Algorithms</span>
+                <span class="tag">Operating Systems</span>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="profile-footer">
+            &copy; 2026 Apex Tech University Student Portal. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
